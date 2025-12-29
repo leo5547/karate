@@ -1,3 +1,4 @@
+
 Feature: Test the Home Page
 
   Background:
@@ -11,7 +12,7 @@ Feature: Test the Home Page
     And match response.tags !contains ['cars', 'baby']
     And match response.tags == '#array'
     And match each response.tags == '#string'  
-
+  @Test
   Scenario: Get 10 articles from page
     # Given param limit = 10
     # Given param offset = 0
